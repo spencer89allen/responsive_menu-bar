@@ -8,20 +8,11 @@
     width: 70%;
     max-width: 400px;
     z-index: 200;
-    transform: translateX(-100%);
-
+    transform: translateX(-105%);
+    transition: transform 0.3s ease-out;
 }
-.sideDrawerOpen {
-    height: 100vh;
-    background: white;
-    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70%;
-    max-width: 400px;
-    z-index: 200;
-    transform: translateX(0);
+.sideDrawer.open {
+    transform: translateX(0)
 }
 .sideDrawer ul {
     height: 100%;
@@ -43,4 +34,9 @@
 .sideDrawer a:hover,
 .sideDrawer a:active {
     color: #fa923f;
+}
+@media ( min-width: 769px ) {
+    .sideDrawer {
+        display: none;
+    }
 }

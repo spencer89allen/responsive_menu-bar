@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div style={{ height: '100vh' }}>
         <Toolbar drawerToggle={this.drawerToggleClickHandler}/>
-        <SideDrawer display={this.sideDrawerOpen}/>
+        <SideDrawer display={this.state.sideDrawerOpen}/>
         {backdrop}
         <main style={{ marginTop: '64px' }}>
           <p>This it the Page Contnet!</p>

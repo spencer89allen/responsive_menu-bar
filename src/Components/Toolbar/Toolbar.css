@@ -42,3 +42,16 @@
 .toolbar_items a:active {
     color: #fa932f;
 }
+@media (max-width: 768px) {
+    .toolbar_items {
+        display: none;
+    }
+}
+@media ( min-width: 769px ) {
+    .toggleButton {
+        display: none;
+    }
+    .toolbar_logo {
+        margin-left: 0;
+    }
+}
